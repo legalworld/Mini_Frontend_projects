@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.star-container {
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 40px;
+  color: lightgray;
+  transition: color 0.2s;
+}
+
+.star.active,
+.star:hover {
+  color: gold;
+}
