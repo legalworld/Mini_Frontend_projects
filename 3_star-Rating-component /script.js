@@ -27,4 +27,4 @@ function updateStars(rating) {
       star.classList.remove("active");
     }
   });
-}
+} 
