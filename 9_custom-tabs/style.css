@@ -1,0 +1,53 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  background-color: #212020;
+  color: #fefeff;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.button-wrapper button {
+  border: none;
+  padding: 1.2em 2em;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.button-wrapper button.active {
+  background-color: gray;
+  color: #fefeff;
+}
+
+.content {
+  display: none;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: 5em;
+}
+
+.content.active {
+  display: block;
+}
