@@ -11,7 +11,7 @@ function validateInputField() {
   if (qrTextInput.value.trim().length > 0) {
     generateQrCode();
   } else {
-    qrContainer.innerHTML = ""; 
+    qrContainer.innerHTML = "";  
     errorMessageText.textContent =
       "Enter text and use some URL to generate QR Code";
   }
