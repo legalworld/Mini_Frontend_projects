@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.loader {
+  display: none;
+}
+
+.loader.show-loader {
+  display: block;
+}
+
+.user-list.hide-users-list {
+  display: none;
+}
