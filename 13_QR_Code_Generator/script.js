@@ -30,3 +30,4 @@ function generateQrCode() {
   qrTextInput.value = "";
   errorMessageText.textContent = "";
 }
+ 
