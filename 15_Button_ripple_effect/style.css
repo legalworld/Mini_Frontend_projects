@@ -1,0 +1,55 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.ripple-effect {
+  position: relative;
+  border: 2px solid black;
+  padding: 15px 35px;
+  display: inline-block;
+  margin: 10px 0px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgb(236, 69, 69), rgb(105, 105, 200));
+  color: #fff;
+  font-weight: bold;
+}
+
+.ripple-effect.secondary {
+  background: linear-gradient(90deg, #061e29, #83b5b8);
+}
+
+.ripple-effect > span {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: rippleEffectAnimation 1s linear infinite;
+}
+
+@keyframes rippleEffectAnimation {
+  0% {
+    height: 0;
+    width: 0;
+  }
+
+  100% {
+    height: 500px;
+    width: 500px;
+  }
+}
