@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0 25px;
+}
+
+.top-section {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgb(96, 96, 237);
+  padding: 10px 0px;
+}
+
+.top-section h1 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: black;
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #fff;
+  width: 0%;
+}
+
+.posts-container {
+  margin: 40px auto 0px auto;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item-wrapper {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(90deg, #36656b, #75b06f);
+}
