@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.loading-text {
+  display: none;
+}
+
+.show-loader {
+  display: block;
+}
+
+.hide-profiledetails {
+  display: none;
+}
