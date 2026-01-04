@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: beige;
+}
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.images-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.load-more-images {
+  margin: 50px 0;
+  padding: 20px;
+  font-size: 20px;
+  background-color: gray;
+  color: #fff;
+}
