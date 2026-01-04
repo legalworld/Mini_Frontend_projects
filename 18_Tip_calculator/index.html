@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tip calculator</title>
+</head>
+
+<body>
+
+    <div class="form-wrapper">
+
+        <div class="input-wrapper">
+            <label for="billAmount">Bill Amount</label>
+            <input class="bill-amount" type="number" placeholder="Enter Your total bill Amount" id="billAmount">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="discountPercentage">Discount percentage</label>
+            <label class="discount-value">0</label>
+            <input class="discount-percentage" type="range" min="0" max="50" placeholder="Enter Your total bill Amount"
+                id="discountPercentage">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="tipPercentage">Tip percentage</label>
+            <label class="tip-value">0</label>
+            <input class="tip-percentage" type="range" min="0" max="50" placeholder="Enter Your total bill Amount"
+                id="tipPercentage">
+        </div>
+
+        <div class="input-wrapper">
+            <label for="no-of-customers">no-of-customers</label>
+            <label class="no-of-customers-value">0</label>
+            <input class="no-of-customers" type="range" min="0" max="100" placeholder="Enter Your total bill Amount"
+                id="no-of-customers">
+        </div>
+
+        <button class="generate-bill">Generate Bill</button>
+        <div>
+
+            <label>Total Tip Paid: </label>
+            <label class="total-tip-paid">0</label>
+        </div>
+
+        <div>
+
+            <label>Total Amount to pay: </label>
+            <label class="total-amount-to-pay">0</label>
+        </div>
+
+        <div class="result-wrapper">
+            <label>Each Customer to pay:</label>
+            <label class="each-customer-to-pay">0</label>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
