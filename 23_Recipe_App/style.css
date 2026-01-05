@@ -67,3 +67,36 @@ h1 {
   letter-spacing: 2px;
   cursor: pointer;
 }
+
+.loader {
+  display: none;
+}
+
+
+.recipe-list.hide{
+  display: none;
+}
+
+.loader.show {
+  display: block;
+  border: 3px solid rgba(119, 117, 117, 0.4);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-top: 3px solid brown;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animateLoader 1s linear infinite;
+}
+
+@keyframes animateLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
