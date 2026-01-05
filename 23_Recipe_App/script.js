@@ -2,8 +2,19 @@ const recipeListContainer = document.querySelector(".recipe-list");
 const loader = document.querySelector(".loader");
 const recipeDetails = document.querySelector(".recipe-details");
 
+function showLoader() {
+  loader.classList.add("show");
+  recipeListContainer.classList.add("hide");
+}
+
+function hideLoader() {
+  loader.classList.remove("show");
+  recipeListContainer.classList.remove("hide");
+}
+
 async function fetchListOfRecipes() {
   try {
+    showLoader();
     const response = await fetch("https://dummyjson.com/recipes", {
       method: "GET",
     });
@@ -12,6 +23,7 @@ async function fetchListOfRecipes() {
     // console.log(result);
 
     if (result && result.recipes && result.recipes.length > 0) {
+      hideLoader();
       displayRecipeList(result.recipes);
     }
   } catch (error) {
