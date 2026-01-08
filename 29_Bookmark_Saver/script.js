@@ -75,3 +75,4 @@ function removeBookmarkFromStorage(name, url) {
 
   localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
 }
+ 
