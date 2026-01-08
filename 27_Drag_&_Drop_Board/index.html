@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Drag & Drop Board</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Kanban Board</h1>
+
+      <div class="board">
+        <!-- LIST 1 -->
+        <div class="list" id="list1">
+          <h2>To Do</h2>
+          <div class="card" draggable="true" id="card1">
+            study operating system
+          </div>
+          <div class="card" draggable="true" id="card2">Buy Groceries</div>
+        </div>
+
+        <!-- LIST 2 -->
+        <div class="list" id="list2">
+          <h2>In Progress</h2>
+          <div class="card" draggable="true" id="card3">
+            learn Distributed system
+          </div>
+        </div>
+
+        <!-- LIST 3 -->
+        <div class="list" id="list3">
+          <h2>Done</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- for more info about drag & drop, follow his URL  -->
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/API/HTML_Drag_and_Drop_API -->
