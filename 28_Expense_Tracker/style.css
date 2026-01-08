@@ -124,7 +124,6 @@ h2 {
   flex-grow: 1;
 }
 
-/* todo: show this later in this video */
 #transaction-list::-webkit-scrollbar {
   width: 8px;
 }
