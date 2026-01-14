@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Currency Converter</h1>
+
+      <form id="converter-form">
+        <div class="form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="from-currency">From</label>
+          <select id="from-currency">
+            <!-- Currency options will be inserted from our api... -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="to-currency">To</label>
+          <select id="to-currency">
+            <!-- Currency options will be inserted from our api... -->
+          </select>
+        </div>
+
+        <button type="submit">Convert</button>
+      </form>
+
+      <div id="result">
+        <!-- this will coming from our api... -->
+      </div>
+    </div>
+  </body>
+</html>
