@@ -33,7 +33,7 @@ searchBox.addEventListener("keydown", (event) => {
 });
 
 async function checkWeather(city) {
-  const apiKey = "2dedfdc9b395fa1fd18726534b0ac796";
+  const apiKey = "";
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
   try {
