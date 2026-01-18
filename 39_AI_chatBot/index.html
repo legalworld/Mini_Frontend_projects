@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>AI Chatbot</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- here i'm having html only for later reference study -->
+      <!-- <div class="user-chat-box">
+        <img src="./assets/user.png" alt="user" id="userImage" width="40" />
+
+        <div class="user-chat-area">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam unde
+          odit, dolores consequuntur repellendus sed repellat velit. Unde
+          officiis hic praesentium cumque nihil magnam, ex, temporibus omnis
+          quae expedita quis.
+        </div>
+      </div> -->
+
+      <div class="ai-chat-box">
+        <img src="./assets/ai.png" alt="AI" id="aiImage" width="10%" />
+
+        <div class="ai-chat-area">
+          Hello ! how can i help you today ?
+          <!-- <img src="./assets/loading.gif " alt="" class="load" width="50px" /> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-area">
+      <input type="text" id="prompt" placeholder="Ask anything" />
+
+      <button id="image">
+        <img src="./assets/image.svg" alt="" />
+        <input type="file" accept="images/*" hidden>
+      </button>
+
+      <button id="submit"><img src="./assets/send.svg" alt="" /></button>
+    </div>
+  </body>
+</html>
