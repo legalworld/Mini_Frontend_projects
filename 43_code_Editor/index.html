@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>code Editor</title>
+  </head>
+  <body>
+    <div class="code-editor-container">
+      <div class="code-editor html-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="./html.png" alt="" width="50px" />
+            <span>HTML</span>
+          </div>
+          <div class="right-head">
+            <img src="./copy.svg" alt="" id="html"/>
+          </div>
+        </div>
+
+        <textarea class="html-input" spellcheck="false"></textarea>
+      </div>
+
+      <div class="code-editor css-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="./css.png" alt="" width="40px" />
+            <span>CSS</span>
+          </div>
+          <div class="right-head">
+            <img src="./copy.svg" alt="" id="css"/>
+          </div>
+        </div>
+
+        <textarea class="css-input" spellcheck="false"></textarea>
+      </div>
+
+      <div class="code-editor javascript-editor">
+        <div class="head-editor">
+          <div class="left-head">
+            <img src="./js.png" alt="" width="30px" />
+            <span>JAVASCRIPT</span>
+          </div>
+          <div class="right-head">
+            <img src="./copy.svg" alt="" id="js"/>
+          </div>
+        </div>
+
+        <textarea class="javascript-input" spellcheck="false"></textarea>
+      </div>
+    </div>
+
+    <div class="output-container">
+      <div class="output-head">
+        <span>OUTPUT</span>
+        <img id="save" src="./save.svg" alt="" />
+        <img src="./full.svg" alt="" id="full" />
+      </div>
+
+      <iframe id="output"> </iframe>
+    </div>
+  </body>
+</html>
